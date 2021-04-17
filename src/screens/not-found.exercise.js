@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import {jsx} from '@emotion/core'
+import {Link} from 'react-router-dom'
 
 // This page displays a regular link on the page, and we've got a styled component
 // for that.
@@ -20,6 +21,7 @@ function NotFoundScreen() {
       <div>
         Sorry... nothing here.
         {/* 🐨 add a <Link> here that says "Go home" and sends the user to "/discover" */}
+        <Link to="/discover">Go home</Link>
       </div>
     </div>
   )
