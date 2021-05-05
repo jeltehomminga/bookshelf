@@ -13,6 +13,7 @@ import {BookScreen} from './screens/book'
 import {NotFoundScreen} from './screens/not-found'
 
 function ErrorFallback({error}) {
+  console.log(JSON.stringify(error, null, 2))
   return (
     <ErrorMessage
       error={error}
